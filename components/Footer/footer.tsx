@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import ProductLogo from '../Header/product-logo'
+import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
+import ProductLogo2 from '../Header/product-logo-2'
 
 interface FooterLink {
     label: string
@@ -24,43 +26,43 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
 
     const columns: FooterColumn[] = [
         {
-            title: 'Column One',
+            title: 'About',
             links: [
-                { label: 'Link One', href: '#' },
-                { label: 'Link Two', href: '#' },
-                { label: 'Link Three', href: '#' },
-                { label: 'Link Four', href: '#' },
-                { label: 'Link Five', href: '#' },
+                { label: 'About us', href: '#' },
+                { label: 'Our Story', href: '#' },
+                { label: 'Leadership', href: '#' },
+                { label: 'Careers', href: '#' },
+                { label: 'Press Kit', href: '#' },
             ],
         },
         {
-            title: 'Column Two',
+            title: 'Resources',
             links: [
-                { label: 'Link Six', href: '#' },
-                { label: 'Link Seven', href: '#' },
-                { label: 'Link Eight', href: '#' },
-                { label: 'Link Nine', href: '#' },
-                { label: 'Link Ten', href: '#' },
+                { label: 'Programs & Events', href: '#' },
+                { label: 'Market Day', href: '#' },
+                { label: 'Workshops', href: '#' },
+                { label: 'Sucess Stories', href: '#' },
+                { label: 'Blog', href: '#' },
             ],
         },
         {
-            title: 'Column Three',
+            title: 'Our Divisions',
             links: [
-                { label: 'Link Eleven', href: '#' },
-                { label: 'Link Twelve', href: '#' },
-                { label: 'Link Thirteen', href: '#' },
-                { label: 'Link Fourteen', href: '#' },
-                { label: 'Link Fifteen', href: '#' },
+                { label: 'Trade Afrika Exchange', href: '#' },
+                { label: 'trade Afrika Academy', href: '#' },
+                { label: 'AfriShip Logitics', href: '#' },
+                { label: 'PayAfrika', href: '#' },
+                { label: 'Data Insights', href: '#' },
             ],
         },
     ]
 
     const socialLinks = [
-        { icon: '📘', label: 'Facebook', href: '#' },
-        { icon: '📷', label: 'Instagram', href: '#' },
+        { icon: <Facebook/>, label: 'Facebook', href: '#' },
+        { icon: <Instagram/>, label: 'Instagram', href: '#' },
         { icon: '𝕏', label: 'X (Twitter)', href: '#' },
-        { icon: '💼', label: 'LinkedIn', href: '#' },
-        { icon: '▶️', label: 'YouTube', href: '#' },
+        { icon: <Linkedin/>, label: 'LinkedIn', href: '#' },
+        { icon: <Youtube/>, label: 'YouTube', href: '#' },
     ]
 
     const handleSubscribe = (e: React.FormEvent) => {
@@ -72,27 +74,27 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
     }
 
     return (
-        <footer className="bg-gray-50 pt-16 pb-8">
+        <footer className="bg-[#055A35] pt-16 pb-8">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
                     {/* Logo */}
                     <div className="lg:col-span-1">
                         <div className="flex items-center gap-2">
-                           <ProductLogo/>
+                           <ProductLogo2/>
                         </div>
                     </div>
 
                     {/* Footer Columns */}
                     {columns.map((column, idx) => (
                         <div key={idx} className="lg:col-span-1">
-                            <h3 className="font-semibold text-gray-900 mb-4">{column.title}</h3>
+                            <h3 className="font-light text-sm text-white mb-4">{column.title}</h3>
                             <ul className="space-y-3">
                                 {column.links.map((link, linkIdx) => (
                                     <li key={linkIdx}>
                                         <Link
                                             href={link.href}
-                                            className="text-gray-600 hover:text-emerald-600 transition-colors duration-200"
+                                            className="text-white text-sm hover:text-emerald-600 transition-colors duration-200"
                                         >
                                             {link.label}
                                         </Link>
@@ -104,9 +106,9 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
 
                     {/* Subscribe Section */}
                     <div className="lg:col-span-1">
-                        <h3 className="font-semibold text-gray-900 mb-4">Subscribe</h3>
-                        <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                            Join our newsletter to stay up to date on features and releases.
+                        <h3 className="font-light text-white mb-4">Subscribe</h3>
+                        <p className="text-white text-sm mb-4 leading-relaxed">
+                            Join our newsletter to stay informed about Trade Afrika's initiatives, partnerships and opportunities shaping Africa's trade future.
                         </p>
                         <form onSubmit={handleSubscribe} className="space-y-3">
                             <input
@@ -114,17 +116,17 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Enter your email"
-                                className="w-full px-4 py-2.5 placeholder:text-neutral-500 placeholder:text-sm  border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
+                                className="w-full px-4 py-2.5 placeholder:text-white placeholder:text-sm  border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200"
                                 required
                             />
                             <button
                                 type="submit"
-                                className="w-full px-4 py-2.5 bg-white border border-gray-900 text-gray-900  font-medium hover:bg-gray-900 hover:text-white transition-all duration-200"
+                                className="w-full px-4 py-2.5 bg-white border text-gray-900  font-medium hover:bg-gray-900 hover:text-white transition-all duration-200"
                             >
                                 Subscribe
                             </button>
                         </form>
-                        <p className="text-xs text-gray-500 mt-3">
+                        <p className="text-xs text-white mt-3">
                             By subscribing you agree to with our{' '}
                             <Link href="#" className="underline hover:text-emerald-600">
                                 Privacy Policy
@@ -139,7 +141,7 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
 
                 {/* Bottom Footer */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600">
+                    <div className="flex flex-wrap items-center gap-6 text-sm text-white">
                         <span>© 2025 Trade Afrika Group. All rights reserved.</span>
                         <Link href="#" className="hover:text-emerald-600 transition-colors underline">
                             Privacy Policy
@@ -159,7 +161,7 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
                                 key={idx}
                                 href={social.href}
                                 aria-label={social.label}
-                                className="w-10 h-10 flex items-center justify-center text-gray-900 hover:text-emerald-600 transition-colors duration-200"
+                                className="w-10 h-10 flex items-center justify-center text-white hover:text-emerald-600 transition-colors duration-200"
                             >
                                 <span className="text-xl">{social.icon}</span>
                             </Link>

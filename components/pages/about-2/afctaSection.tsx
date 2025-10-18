@@ -17,20 +17,20 @@ const AfCFTASection: React.FC = () => {
     ]
 
     return (
-        <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+        <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 ">
             <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <h2 className="text-3xl md:text-3xl font-bold text-center mb-6 text-black">Aligned with AfCFTA</h2>
 
                 {/* Description */}
                 <p className="text-center text-gray-700 text-base md:text-lg leading-relaxed max-w-4xl mx-auto mb-12">
-                    Trade Afrika Group operates in full alignment with the African Continental Free Trade Area,
+                    Trade Afrika Group operates in full alignment with the African Continental Free Trade Area (AfCFTA),
                     supporting the vision of a unified African market. Our platforms are designed to facilitate
                     cross-border trade, reduce barriers, and empower businesses to participate in the continent's
-                    economic integration.
+                    economic integration under agenda 2063.
                 </p>
 
-                {/* Logos grid */}
+                {/* Logos grid
                 <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
                     {logos.map((logo, index) => (
                         <div
@@ -56,7 +56,7 @@ const AfCFTASection: React.FC = () => {
                             )}
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </section>
     )

@@ -4,9 +4,19 @@ import './globals.css'
 import HeaderComponent from '@/components/Header/header'
 import FooterComponent from '@/components/Footer/footer'
 
-const Interfont = Inter({
+/**
+ * The Heading's font
+ */
+const InterFont = Inter({
     subsets: ['latin'],
+    variable : "--next-interfont"
 })
+
+/**
+ * The Body's Font
+ */
+
+
 
 export const metadata: Metadata = {
     title: 'TradeAfrika',
@@ -19,7 +29,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${Interfont.className} antialiased`}>
+            <body className={`${InterFont.className} ${InterFont.variable} antialiased`}>
                 <HeaderComponent />
                 {children}
                 <FooterComponent />

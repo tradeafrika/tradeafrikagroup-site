@@ -5,7 +5,7 @@ const VisionMissionSection: React.FC = () => {
         <section className="bg-white py-32 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Main heading */}
-                <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-black">Vision and Mission</h2>
+                <h2 className="text-4xl md:text-5xl font-semibold text-center mb-16 text-black">Vision and Mission</h2>
 
                 {/* Cards container */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
