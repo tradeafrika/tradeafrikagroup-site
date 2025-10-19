@@ -41,13 +41,14 @@ export default function StoryTake() {
                 {/* Image */}
                 <div className="flex justify-center order-1 md:order-none">
                     <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl rounded-xl overflow-hidden">
-                        <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[500px] 2xl:h-[600px] border border-black rounded-xl">
-                            {/* <Image
-                src={placeholder2}
-                alt="Buyer browsing"
-                className="object-cover w-full h-full"
-                priority
-              /> */}
+                        <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[500px] 2xl:h-[600px]  rounded-xl">
+                            <Image
+                                src="/imgs/OurStoryImage.jpg"
+                                alt="Buyer browsing"
+                                className="bg-center object-cover w-full h-full"
+                                priority
+                                fill
+                            />
                         </div>
                     </div>
                 </div>

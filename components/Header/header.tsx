@@ -66,10 +66,10 @@ const HeaderComponent: React.FC = () => {
 
     return (
         <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
-            <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
+            <div className="w-full  mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+                <div className="flex items-center justify-between h-16 w-[90%]">
                     {/* Logo */}
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 ">
                         <ProductLogo />
                     </div>
                     <div className="flex gap-4">
@@ -259,13 +259,6 @@ const HeaderComponent: React.FC = () => {
                             {mobileDropdown === 'divisions' && (
                                 <div className="pl-4 space-y-1 mt-1">
                                     <Link
-                                        href="/divisions/trading"
-                                        className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm transition-colors"
-                                        onClick={closeMobileMenu}
-                                    >
-                                        Academy
-                                    </Link>
-                                    <Link
                                         href="/divisions/marketplace"
                                         className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm transition-colors"
                                         onClick={closeMobileMenu}
@@ -273,11 +266,25 @@ const HeaderComponent: React.FC = () => {
                                         Marketplace
                                     </Link>
                                     <Link
-                                        href="/divisions/research"
+                                        href="/divisions/macademy"
                                         className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm transition-colors"
                                         onClick={closeMobileMenu}
                                     >
-                                        Logistics
+                                        Academy
+                                    </Link>
+                                    <Link
+                                        href="/divisions/afriship"
+                                        className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm transition-colors"
+                                        onClick={closeMobileMenu}
+                                    >
+                                        AfriShip
+                                    </Link>
+                                     <Link
+                                        href="/divisions/payafrika"
+                                        className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm transition-colors"
+                                        onClick={closeMobileMenu}
+                                    >
+                                        PayAfrika
                                     </Link>
                                 </div>
                             )}

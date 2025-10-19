@@ -88,7 +88,7 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
                     {/* Footer Columns */}
                     {columns.map((column, idx) => (
                         <div key={idx} className="lg:col-span-1">
-                            <h3 className="font-light text-sm text-white mb-4">{column.title}</h3>
+                            <h5 className="font-light text-sm text-white mb-4">{column.title}</h5>
                             <ul className="space-y-3">
                                 {column.links.map((link, linkIdx) => (
                                     <li key={linkIdx}>
@@ -106,7 +106,7 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
 
                     {/* Subscribe Section */}
                     <div className="lg:col-span-1">
-                        <h3 className="font-light text-white mb-4">Subscribe</h3>
+                        <h5 className="font-light text-white mb-4">Subscribe</h5>
                         <p className="text-white text-sm mb-4 leading-relaxed">
                             Join our newsletter to stay informed about Trade Afrika's initiatives, partnerships and opportunities shaping Africa's trade future.
                         </p>

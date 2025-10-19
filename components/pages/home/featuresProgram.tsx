@@ -15,21 +15,21 @@ const programs: Program[] = [
         id: '1',
         title: 'Trade Africa Market Days',
         description: 'Monthly marketplace events connecting African producers and suppliers to  buyers, corporates and digital platforms.',
-        imageUrl: '/market-day.jpg', // Replace with your actual image path
+        imageUrl: '/imgs/Marketplace.jpg', // Replace with your actual image path
         link: '',
     },
     {
         id: '2',
         title: 'Digital Trade Workshops',
         description: 'A flagship training initiative preparing MSMEs for digital commerce and AfCFTA participation',
-        imageUrl: '/market-day.jpg', // Replace with your actual image path
+        imageUrl: '/imgs/workshop.jpg', // Replace with your actual image path
         link: '',
     },
     {
         id: '3',
         title: 'Women & Youth in Trade Forum',
         description: 'Empowering young Africans and women enterpreneurs to lead the continent digital trade revolution ',
-        imageUrl: '/market-day.jpg', // Replace with your actual image path
+        imageUrl: '/imgs/WomenandYouthinTrade.jpg', // Replace with your actual image path
         link: '',
     },
 ]
@@ -63,10 +63,10 @@ const FeaturedPrograms: React.FC = () => {
                             {/* Content */}
                             <div className="px-6 pb-6">
                                 {/* Title */}
-                                <h3 className="text-lg font-sans text-gray-900 mb-3">{program.title}</h3>
+                                <h5 className="text-lg font-sans text-gray-900 mb-3">{program.title}</h5>
 
                                 {/* Description */}
-                                <p className="text-gray-600 mb-4">{program.description}</p>
+                                <p className="text-gray-600">{program.description}</p>
 
                                 {/* Link */}
                                 <a

@@ -12,7 +12,7 @@ export default function PartnerShipItem(props: IPillarsItemsProps) {
             <div className="w-6 h-6 bg-orange-700 rounded-full flex items-center justify-center mb-4">
                 <Globe className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-sm font-bold text-black mb-3 ">{props.title}</h3>
+            <span className="text-sm font-bold text-black mb-3 ">{props.title}</span>
             <p className="text-gray-500 font-semibold mb-2  text-sm leading-relaxed">{props.description}</p>
 
             {/* Title */}

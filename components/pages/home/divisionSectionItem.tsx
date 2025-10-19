@@ -43,11 +43,11 @@ export default function DivisonsSectionItem({ division }: DivisionProps) {
 
             {/* Content */}
             <div className="p-6 flex flex-col flex-1">
-                <Earth className="text-green-600 w-6 h-6" />
+                <Earth className="text-green-600 w-8 h-8" />
 
-                <h3 className="text-lg md:text-xl mt-3 font-semibold text-gray-900">
+                <h5 className="text-lg md:text-xl mt-3 font-semibold text-gray-900">
                     {division.title}
-                </h3>
+                </h5>
 
                 <p className="text-gray-600 mt-2 mb-6 text-sm md:text-base flex-1">
                     {division.description}

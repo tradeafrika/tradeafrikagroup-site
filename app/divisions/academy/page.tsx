@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { ChevronDown, CheckCircle, TrendingUp, Shield, Globe, Zap } from 'lucide-react'
 import Link from 'next/link'
+import academyImage from '@/public/imgs/TradeAfrikaAcademy.jpg'
 
 const TradeAfrikaAcademy: React.FC = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -99,19 +100,29 @@ const TradeAfrikaAcademy: React.FC = () => {
     ]
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen ">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-orange-50 to-white py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 2xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+            <section className="relative   py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 2xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+                <div
+                    style={{
+                        backgroundImage: `url(${academyImage.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                         filter: 'brightness(65%)',
+                    }}
+                    className="absolute -z-10  left-0 w-full bottom-0 h-full"
+                ></div>
+
                 <div className="max-w-[1400px] mx-auto text-center">
                     {/* Heading */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-100 mb-6 sm:mb-8 leading-tight">
                         Hands-On Digital Trade Skills
                         <br className="hidden sm:block" />
                         for Africa’s MSMEs
                     </h1>
 
                     {/* Description */}
-                    <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
+                    <p className="text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
                         The Trade Afrika Academy equips entrepreneurs and MSMEs with practical skills, mentorship, and
                         resources to thrive in cross-border commerce.
                         <br />
@@ -126,8 +137,6 @@ const TradeAfrikaAcademy: React.FC = () => {
                     >
                         Join a Workshop
                     </Link>
-
-                   
                 </div>
             </section>
 
@@ -156,7 +165,7 @@ const TradeAfrikaAcademy: React.FC = () => {
             </section>
 
             {/* Benefits Section */}
-            <section className="py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
+            <section className="py-16 bg-white sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
                 <div className="max-w-[1400px] mx-auto">
                     {/* Section Header */}
                     <div className="text-center mb-10 sm:mb-12 md:mb-16">

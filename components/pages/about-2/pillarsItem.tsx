@@ -15,7 +15,7 @@ export default function PillarsItem(props: IPillarsItemsProps) {
             <p className="text-black font-semibold mb-2  text-sm leading-relaxed">{props.description}</p>
 
             {/* Title */}
-            <h3 className="text-sm font-light text-black mb-3 ">{props.title}</h3>
+            <span className="text-sm font-light text-black mb-3 ">{props.title}</span>
 
             {/* Description */}
         </div>

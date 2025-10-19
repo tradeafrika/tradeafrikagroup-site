@@ -6,11 +6,11 @@ const CTASection: React.FC = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="bg-[#067E48] rounded-3xl px-8 py-16 md:py-24 text-center ">
                     {/* Heading */}
-                    <h2 className="text-2xl md:text-4xl lg:text-6xl font-semibold text-white mb-6">
+                    <span className="text-2xl md:text-4xl lg:text-6xl font-semibold text-white mb-6">
                         Join Trade Afrika Group
                         <br />
                         Today
-                    </h2>
+                    </span>
 
                     {/* Subtitle */}
                     <p className="text-lg md:text-xl text-green-50 mb-10 max-w-2xl mx-auto">

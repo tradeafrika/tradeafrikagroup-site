@@ -1,32 +1,69 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-body);
-  font-weight: 700;
-  line-height: 1.2;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Inter;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #121717 !important;
+} */
+
+
+/* 
+h1 {
+    font-family: var(--font-body);
+    font-weight: 700 !important;
+    line-height: 72px !important;
+    font-size: 60px !important;
+}
+
+h2 {
+    font-family: var(--font-body);
+    font-weight: 700 !important;
+    line-height: 56px !important;
+    font-size: 48px !important;
+}
+h3 {
+    font-family: var(--font-body);
+    font-weight: 700 !important;
+    line-height: 48px !important;
+    font-size: 40px !important;
+}
+h4 {
+    font-family: var(--font-body);
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    font-size: 32px !important;
+}
+h5 {
+    font-family: var(--font-body);
+    font-weight: 700 !important;
+    line-height: 32px !important;
+    font-size: 24px !important;
+} */

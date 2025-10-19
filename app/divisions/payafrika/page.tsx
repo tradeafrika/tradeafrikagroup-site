@@ -15,6 +15,7 @@ import {
     Smartphone,
 } from 'lucide-react'
 import Link from 'next/link'
+import afrika from '@/public/imgs/PayAfrika.jpg'
 
 const PayAfrikaPage: React.FC = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -73,17 +74,17 @@ const PayAfrikaPage: React.FC = () => {
                 'PayAfrika accelerates cross-border transactions, reducing delays and improving cash flow for African businesses.',
         },
         {
-            title: '🔒 Reduce transaction risk with built-in escrow and fraud detection',
+            title: 'Reduce transaction risk with built-in escrow and fraud detection',
             description:
                 'Our escrow and monitoring systems protect buyers and sellers from fraud and transaction errors.',
         },
         {
-            title: '🧩 Integrate instantly using developer-friendly APIs and SDKs',
+            title: 'Integrate instantly using developer-friendly APIs and SDKs',
             description:
                 'Developers can quickly integrate PayAfrika into existing platforms using RESTful APIs and mobile SDKs.',
         },
         {
-            title: '💳 Access working capital without complex bank bureaucracy',
+            title: 'Access working capital without complex bank bureaucracy',
             description:
                 'Verified traders can access trade financing and invoice factoring directly through our platform.',
         },
@@ -117,15 +118,28 @@ const PayAfrikaPage: React.FC = () => {
     ]
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen ">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-orange-50 to-white py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 2xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+            <section
+              
+                className="relative  py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 2xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-48"
+            >
+                <div
+                    style={{
+                        backgroundImage: `url(${afrika.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        filter: 'brightness(65%)',
+                    }}
+                    className="absolute -z-10  left-0 w-full bottom-0 h-full"
+                ></div>
+
                 <div className="max-w-[1400px] mx-auto text-center">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-100 mb-6 sm:mb-8 leading-tight">
                         Seamless Cross-Border Payments and Trade Finance
                     </h1>
 
-                    <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
+                    <p className="text-gray-100 text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
                         PayAfrika is Africa’s fintech engine for digital commerce — offering fast, affordable, and
                         secure multi-currency payments.
                         <br />
@@ -139,8 +153,6 @@ const PayAfrikaPage: React.FC = () => {
                     >
                         Integrate PayAfrika
                     </Link>
-
-                    <div className="mt-4 text-gray-900 font-semibold text-lg sm:text-xl">💻 API-First Platform</div>
                 </div>
             </section>
 
@@ -169,7 +181,7 @@ const PayAfrikaPage: React.FC = () => {
             </section>
 
             {/* Benefits Section */}
-            <section className="py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
+            <section className="bg-white py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
                 <div className="max-w-[1400px] mx-auto">
                     <div className="text-center mb-10 sm:mb-12 md:mb-16">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 leading-tight">
@@ -196,7 +208,7 @@ const PayAfrikaPage: React.FC = () => {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 bg-gray-50">
+            <section className=" py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 bg-gray-50">
                 <div className="max-w-[1000px] mx-auto">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">
                         Frequently Asked Questions
@@ -240,7 +252,7 @@ const PayAfrikaPage: React.FC = () => {
             </section>
 
             {/* Closing CTA Section for All Divisions */}
-            <section className="py-16 px-4 mx-4 my-8">
+            <section className="py-16 px-4  bg-white">
                 <div className="max-w-4xl mx-auto bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-12 text-center text-white">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         Trade Afrika Group — Building Africa’s Digital Trade Future

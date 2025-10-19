@@ -4,7 +4,10 @@ import React from 'react'
 
 const DivisionsHero: React.FC = () => {
     return (
-        <section className="bg-[#e6f2ed] flex items-center justify-center py-20 sm:py-28 md:py-32 lg:py-40 px-4 sm:px-8 lg:px-16 xl:px-24 2xl:px-40">
+        <section 
+       
+        
+        className="bg-[#e6f2ed] flex items-center justify-center py-20 sm:py-28 md:py-32 lg:py-40 px-4 sm:px-8 lg:px-16 xl:px-24 2xl:px-40">
             <div className="w-full max-w-[1600px] text-center">
                 {/* Tagline */}
                 <p className="text-emerald-600 font-semibold uppercase tracking-wide mb-3 sm:mb-4 text-xs sm:text-sm md:text-base">

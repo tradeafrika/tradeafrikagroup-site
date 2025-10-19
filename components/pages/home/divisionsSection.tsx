@@ -15,7 +15,7 @@ const divisions: Division[] = [
         title: 'Trade Afrika Marketplace',
         description:
             'Pan-African B2B marketplace connecting verified African suppliers, manufactures and buyers to expand regional value chains',
-        imageUrl: '/trade-exchange-map.png', // Replace with your actual image path
+        imageUrl: '/imgs/Marketplace.jpg', // Replace with your actual image path
         link: '/divisions/marketplace',
     },
     {
@@ -23,7 +23,7 @@ const divisions: Division[] = [
         title: 'Trade Afrika Academy',
         description:
             'Empowering MSMEs with digital trade knowledge, businesss mentorship and export readiness training to compete globally',
-        imageUrl: '/trade-academy-placeholder.png', // Replace with your actual image path
+        imageUrl: '/imgs/TradeAfrikaAcademy.jpg', // Replace with your actual image path
         link: '/divisions/academy',
     },
     {
@@ -31,7 +31,7 @@ const divisions: Division[] = [
         title: 'Afriship by Trade Afrika',
         description:
             'Partnering with logitics providers to simplify cross border shipping, warehousing and  customs clearance across Africa',
-        imageUrl: '/trade-academy-placeholder.png', // Replace with your actual image path
+        imageUrl: '/imgs/afriship.jpg', // Replace with your actual image path
         link: '/divisions/afriship',
     },
     {
@@ -39,7 +39,7 @@ const divisions: Division[] = [
         title: 'PayAfrika',
         description:
             'Integrating trusted fintech partners to enable secure cross border payments, trade financing and digital wallets for African businesses',
-        imageUrl: '/trade-academy-placeholder.png', // Replace with your actual image path
+        imageUrl: '/imgs/PayAfrika.jpg', // Replace with your actual image path
         link: '/divisions/payafrika',
     },
 ]

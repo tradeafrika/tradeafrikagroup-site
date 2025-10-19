@@ -46,7 +46,7 @@ interface GalleryImage {
 const programs: Program[] = [
     {
         id: 1,
-        title: 'Market Access',
+        title: 'TradeAfrika Market Days',
         description: 'Gain opportunities to verified buyers and suppliers worldwide.',
         image: '/images/market-access.jpg',
         link: '#',
@@ -144,7 +144,7 @@ const ProgramCard: React.FC<Program> = ({ title, description, image, link }) => 
             <div className="absolute inset-0 flex items-center justify-center text-white text-4xl">🌍</div>
         </div>
         <div className="p-6">
-            <h3 className="text-xl font-normal text-gray-900 mb-2">{title}</h3>
+            <span className="text-xl font-normal text-gray-900 mb-2">{title}</span>
             <p className="text-gray-600 mb-4">{description}</p>
             <a href={link} className="text-emerald-600 font-medium hover:text-emerald-700 inline-flex items-center">
                 Learn More →
@@ -164,7 +164,7 @@ const EventCard: React.FC<Event> = ({ date, month, title, location, time, catego
                 <span className="inline-block bg-emerald-600 text-white text-xs px-3 py-1 rounded-full mb-2">
                     {category}
                 </span>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
+                <span className="text-lg font-semibold text-gray-900 mb-2 block">{title}</span>
                 <div className="flex gap-4 text-sm text-gray-600">
                     <span className="flex items-center gap-1">
                         <MapPin size={16} />

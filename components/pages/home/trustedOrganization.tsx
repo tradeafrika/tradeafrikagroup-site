@@ -37,9 +37,9 @@ const TrustedOrganizations: React.FC = () => {
                 <div className="flex flex-col items-center justify-center">
                     {/* Left Text */}
                     <div className="flex-shrink-0 mb-10 text-center">
-                        <h2 className="text-4xl md:text-4xl font-semibold  mb-4 text-green-900">
+                        <h4 className="text-4xl md:text-4xl font-semibold  mb-4 text-green-900">
                             Trusted by Leading Organizations
-                        </h2>
+                        </h4>
                         <span className='text-neutral-600'>We are proud to collaborate with forward-thinking institutions driving Africa's Economic transformation</span>
                     </div>
 

@@ -3,30 +3,36 @@ import { ArrowRight, Globe } from 'lucide-react'
 const partnershipModels = [
     {
         title: 'Entrepreneurs & MSMEs',
-        description: 'Registeer on the trade Afrika Exchange to access verified suppliers, buyers , and new markets',
+        description: 'Register on the trade Afrika Exchange to access verified suppliers, buyers , and new markets',
+        link: '/divisions/marketplace',
     },
     {
         title: 'Trade Facilitation & Logistics',
         description:
             'We work with logistical and business partners to improve trade facilitation, warehousing and customs clearance.',
+        link: '/divisions/afriship',
     },
     {
         title: 'Financial Inclusion & Payments',
         description:
             'In partnership with Finance and Fintech partners, we facilitate access to inclusive payments, trade finance, and digital infrastructure.',
+        link: '/divisions/payafrika',
     },
     {
         title: 'Skills Development',
         description:
             'Through the Trade Africa Academy, we train and upskill traders in digital entrepreneurship and e-export readiness.',
+        link: '/divisions/academy',
     },
     {
         title: 'Market Access & Events',
         description:
             'We curate partnerships like the Trade Africa Market Day and Digital Trade Workshops to connect MSMEs with regional buyers and exporters.',
+        link: '/programs-events',
     },
     {
         title: 'Strategic Partners',
+        link: '/partnerships',
         description:
             'Public, technology, and financial alignment with regional governance and multilateral partners to shape the future of African digital trade.',
     },
@@ -35,6 +41,7 @@ const partnershipModels = [
 interface IPillarsItemsProps {
     title: string
     description: string
+    link: string
 }
 
 export function ShipItem2(props: IPillarsItemsProps) {
@@ -42,10 +49,10 @@ export function ShipItem2(props: IPillarsItemsProps) {
         <div className="bg-white rounded-xl p-4 w-[420px] shadow-sm hover:shadow-sm transition-shadow">
             {/* Icon */}
 
-            <h3 className="text-sm font-bold text-black mb-3 ">{props.title}</h3>
+            <h5 className="text-sm font-bold text-black mb-3 ">{props.title}</h5>
             <p className="text-gray-500 font-semibold mb-2  text-sm leading-relaxed">{props.description}</p>
             <a
-                href={""}
+                href={props.link}
                 className="
                         inline-flex 
                         items-center 
@@ -56,7 +63,7 @@ export function ShipItem2(props: IPillarsItemsProps) {
                         text-sm
                     "
             >
-                Become Mentor
+                Explore
                 <ArrowRight className="ml-2 w-4 h-4" />
             </a>
             {/* <div className="w-6 h-6 bg-orange-700 rounded-full flex items-center justify-center mb-4">
@@ -88,7 +95,7 @@ export default function Ptr() {
                 {/* Partnership Items */}
                 <div className="flex flex-wrap gap-4  items-center justify-center">
                     {partnershipModels.map((model, index) => (
-                        <ShipItem2 key={index} title={model.title} description={model.description} />
+                        <ShipItem2 link={model.link} key={index} title={model.title} description={model.description} />
                     ))}
                 </div>
             </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import { ChevronDown, CheckCircle, TrendingUp, Shield, Globe, Zap } from 'lucide-react'
+import marketplaceImage from '@/public/imgs/Marketplace.jpg'
 
 const TradeAfrikaMarketPlace: React.FC = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -104,12 +105,21 @@ const TradeAfrikaMarketPlace: React.FC = () => {
     ]
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen ">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-orange-50 to-white py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 2xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+            <section className="relative py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 2xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+                <div
+                    style={{
+                        backgroundImage: `url(${marketplaceImage.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        filter: 'brightness(65%)',
+                    }}
+                    className="absolute -z-10  left-0 w-full bottom-0 h-full"
+                ></div>
                 <div className="max-w-[1400px] mx-auto text-center">
                     {/* Heading */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight">
                         Connect with verified
                         <br className="hidden sm:block" />
                         buyers and sellers across
@@ -118,7 +128,7 @@ const TradeAfrikaMarketPlace: React.FC = () => {
                     </h1>
 
                     {/* Description */}
-                    <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
+                    <p className="text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
                         Trade Afrika Exchange is the continent's trusted B2B marketplace for cross-border commerce. Find
                         reliable partners, manage transactions securely, and grow your business across Africa.
                     </p>
@@ -130,7 +140,7 @@ const TradeAfrikaMarketPlace: React.FC = () => {
                 </div>
             </section>
 
-            <section className="py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
+            <section className="py-16 bg-white sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
                 <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-16">
                     {/* Left Column */}
                     <div>
@@ -207,7 +217,7 @@ const TradeAfrikaMarketPlace: React.FC = () => {
             </section>
 
             {/* Why Choose Section */}
-            <section className="py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
+            <section className="py-16 bg-white sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
                 <div className="max-w-[1400px] mx-auto">
                     {/* Section Header */}
                     <div className="text-center mb-10 sm:mb-12 md:mb-16">
@@ -222,7 +232,7 @@ const TradeAfrikaMarketPlace: React.FC = () => {
                     </div>
 
                     {/* Benefits List */}
-                    <div className="space-y-6 sm:space-y-8 md:space-y-10">
+                    <div className="bg-white space-y-6 sm:space-y-8 md:space-y-10">
                         {benefits.map((benefit, index) => (
                             <div
                                 key={index}
@@ -241,7 +251,7 @@ const TradeAfrikaMarketPlace: React.FC = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 px-4 mx-4 my-8">
+            <section className="py-16 px-4  bg-[#e6f2ed]">
                 <div className="max-w-4xl mx-auto bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-12 text-center text-white">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         Ready to Transform Your

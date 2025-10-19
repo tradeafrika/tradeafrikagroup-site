@@ -7,9 +7,9 @@ const HeroSection: React.FC = () => {
         <section className="bg-[#e6f2ed] flex items-center justify-center py-16 sm:py-24 md:py-28 lg:py-32 xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 2xl:px-40">
             <div className="w-full max-w-[1600px] text-center">
                 {/* Small heading */}
-                <h3 className="text-green-700 text-xs sm:text-sm md:text-base font-semibold tracking-wider uppercase mb-4 sm:mb-6">
+                <span className="text-green-700 text-xs sm:text-sm md:text-base font-semibold tracking-wider uppercase mb-4 sm:mb-6">
                     About Trade Afrika Group
-                </h3>
+                </span>
 
                 {/* Main heading */}
                 <h1 className="text-green-700 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-semibold mb-6 sm:mb-8 leading-tight">

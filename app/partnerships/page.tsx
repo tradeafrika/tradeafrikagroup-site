@@ -74,9 +74,9 @@ const PartnershipPage = () => {
                         <button className="bg-green-700 hover:bg-green-600 text-white px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base lg:text-lg transition-colors w-full sm:w-auto">
                             Become a Partner
                         </button>
-                        <button className="bg-white hover:bg-gray-50 text-gray-800 px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base lg:text-lg border border-gray-300 transition-colors w-full sm:w-auto">
-                            Pursue Collaboration
-                        </button>
+                        {/* <button className="bg-white hover:bg-gray-50 text-gray-800 px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base lg:text-lg border border-gray-300 transition-colors w-full sm:w-auto">
+                            Get Involved
+                        </button> */}
                     </div>
                 </div>
             </section>
@@ -177,7 +177,7 @@ const PartnershipPage = () => {
                             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5">
                                 <Mail className="w-6 h-6 sm:w-7 sm:h-7 text-green-600" />
                             </div>
-                            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3">Email</h3>
+                            <span className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3">Email</span>
                             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-4 leading-relaxed">
                                 Drop us a few words! We aim to respond promptly — typically within 24 hours on business
                                 days.
@@ -195,7 +195,7 @@ const PartnershipPage = () => {
                             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-5">
                                 <Phone className="w-6 h-6 sm:w-7 sm:h-7 text-green-600" />
                             </div>
-                            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3">Phone</h3>
+                            <span className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-3">Phone</span>
                             <p className="text-gray-600 text-sm sm:text-base md:text-lg mb-4 leading-relaxed">
                                 Call us directly during business hours to immediately escalate your detailed partnership
                                 inquiry.

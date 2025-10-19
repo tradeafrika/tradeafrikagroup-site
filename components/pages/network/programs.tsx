@@ -63,7 +63,7 @@ const FeaturedPrograms2: React.FC = () => {
                             {/* Content */}
                             <div className="px-6 pb-6">
                                 {/* Title */}
-                                <h3 className="text-lg font-sans text-gray-900 mb-3">{program.title}</h3>
+                                <h5 className="text-lg font-sans text-gray-900 mb-3">{program.title}</h5>
 
                                 {/* Description */}
                                 <p className="text-gray-600 mb-4">{program.description}</p>

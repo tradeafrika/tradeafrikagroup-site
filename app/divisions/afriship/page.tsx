@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { ChevronDown, CheckCircle, TrendingUp, Shield, Globe, Zap, Truck, Clock, Check } from 'lucide-react'
 import Link from 'next/link'
+import afriship from '@/public/imgs/afriship.jpg'
 
 const AfriShipPage: React.FC = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -56,24 +57,21 @@ const AfriShipPage: React.FC = () => {
 
     const benefits = [
         {
-            title: '📦 Achieve 99%+ on-time performance across all routes',
+            title: 'Achieve 99%+ on-time performance across all routes',
             description:
                 'AfriShip ensures reliable delivery schedules across multiple African corridors for consistent service.',
         },
         {
-            title: '💰 Reduce landed costs by 20–30% through optimized routing',
-            description:
-                'Our logistics solutions optimize transportation and storage to minimize total costs.',
+            title: 'Reduce landed costs by 20–30% through optimized routing',
+            description: 'Our logistics solutions optimize transportation and storage to minimize total costs.',
         },
         {
-            title: '🧾 Avoid customs delays with expert documentation support',
-            description:
-                'Our team handles all customs paperwork and compliance so your shipments move smoothly.',
+            title: 'Avoid customs delays with expert documentation support',
+            description: 'Our team handles all customs paperwork and compliance so your shipments move smoothly.',
         },
         {
-            title: '🌐 Track every shipment in real-time via web and mobile',
-            description:
-                'Stay updated with live tracking data and notifications for complete shipment visibility.',
+            title: 'Track every shipment in real-time via web and mobile',
+            description: 'Stay updated with live tracking data and notifications for complete shipment visibility.',
         },
     ]
 
@@ -113,39 +111,41 @@ const AfriShipPage: React.FC = () => {
     ]
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen">
             {/* Hero Section */}
-            <section className="bg-gradient-to-b from-orange-50 to-white py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 2xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+            <section className=" relative py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 2xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-48">
+                <div
+                    style={{
+                        backgroundImage: `url(${afriship.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        filter: 'brightness(65%)',
+                    }}
+                    className="absolute -z-10  left-0 w-full bottom-0 h-full"
+                ></div>
+
                 <div className="max-w-[1400px] mx-auto text-center">
                     {/* Heading */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-200 mb-6 sm:mb-8 leading-tight">
                         Border-to-Border Logistics Made Simple
                     </h1>
 
                     {/* Description */}
-                    <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                        AfriShip simplifies the complexity of African cross-border logistics — ensuring reliable delivery, transparent pricing, and expert customs handling.
+                    <p className="text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
+                        AfriShip simplifies the complexity of African cross-border logistics — ensuring reliable
+                        delivery, transparent pricing, and expert customs handling.
                         <br />
-                        We partner with trusted logistics providers to keep African goods moving efficiently and affordably across borders.
+                        We partner with trusted logistics providers to keep African goods moving efficiently and
+                        affordably across borders.
                     </p>
 
                     {/* CTA Button */}
-                    <Link href="/afriship/partnership" className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded-lg text-sm sm:text-base md:text-lg transition-colors">
+                    <Link
+                        href="/afriship/partnership"
+                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded-lg text-sm sm:text-base md:text-lg transition-colors"
+                    >
                         Partner with AfriShip
                     </Link>
-
-                    {/* Stats */}
-                    <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-900 font-semibold text-lg sm:text-xl">
-                        <div className="flex items-center gap-2">
-                            <Truck className="w-6 h-6 text-orange-500" /> 12 Countries Covered
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Clock className="w-6 h-6 text-orange-500" /> 7 Days Average Transit Time
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <Check className="w-6 h-6 text-orange-500" /> 99.2% On-Time Delivery
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -174,7 +174,7 @@ const AfriShipPage: React.FC = () => {
             </section>
 
             {/* Benefits Section */}
-            <section className="py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
+            <section className="py-16 bg-white sm:py-20 md:py-24 lg:py-28 xl:py-32 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32">
                 <div className="max-w-[1400px] mx-auto">
                     {/* Section Header */}
                     <div className="text-center mb-10 sm:mb-12 md:mb-16">
