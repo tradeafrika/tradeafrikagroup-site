@@ -310,36 +310,29 @@ const HeaderComponent: React.FC = () => {
                                         className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm transition-colors"
                                         onClick={closeMobileMenu}
                                     >
-                                        Creator Accelerator
-                                    </Link>
-                                    <Link
-                                        href="/programs/partnerships"
-                                        className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm transition-colors"
-                                        onClick={closeMobileMenu}
-                                    >
-                                        Brand Partnerships
+                                        Market Day
                                     </Link>
                                     <Link
                                         href="/programs/summit"
                                         className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm transition-colors"
                                         onClick={closeMobileMenu}
                                     >
-                                        Annual Summit
+                                        Workshops
                                     </Link>
                                 </div>
                             )}
                         </div>
 
                         <Link
-                            href="#investors"
+                           href="/partnerships"
                             className="block px-3 py-3 text-gray-900 hover:bg-gray-100 rounded-md text-base font-medium transition-colors"
                             onClick={closeMobileMenu}
                         >
-                            Investors
+                            Partnerships
                         </Link>
 
                         <Link
-                            href="#contact"
+                            href="/contactus"
                             className="block mx-3 mt-4 text-center text-gray-900 px-6 py-3 rounded-md border border-green-700 hover:bg-gray-50 text-base font-medium transition-colors"
                             onClick={closeMobileMenu}
                         >
