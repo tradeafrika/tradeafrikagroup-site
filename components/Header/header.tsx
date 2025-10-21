@@ -170,14 +170,14 @@ const HeaderComponent: React.FC = () => {
                                 {openDropdown === 'programs' && (
                                     <div className="absolute top-full left-0 mt-2 w-52 bg-white border border-gray-200 rounded-md shadow-lg py-1 z-50">
                                         <Link
-                                            href="/programs/accelerator"
+                                            href="/programs-events"
                                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
                                             onClick={() => setOpenDropdown(null)}
                                         >
                                             Market Day
                                         </Link>
                                         <Link
-                                            href="/programs/partnerships"
+                                            href="/programs-events"
                                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors"
                                             onClick={() => setOpenDropdown(null)}
                                         >

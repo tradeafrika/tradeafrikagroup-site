@@ -186,7 +186,7 @@ const PartnershipPage = () => {
                                 href="mailto:info@tradeafriKa.org"
                                 className="text-green-600 hover:text-green-700 font-medium underline break-words"
                             >
-                                info@tradeafriKa.org
+                                info@tradeafrika.org
                             </a>
                         </div>
 

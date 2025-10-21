@@ -15,38 +15,32 @@ const TradeAfrikaMarketPlace: React.FC = () => {
         {
             icon: <CheckCircle className="w-6 h-6 text-orange-500" />,
             title: 'Vendor Onboarding',
-            description:
-                'Easily add new vendors to your buyer supply network. Create vendor accounts and streamline the onboarding process.',
+            description: 'Comprehensive verification process ensuring every buyer and seller is trusted and compliant.',
         },
         {
             icon: <TrendingUp className="w-6 h-6 text-orange-500" />,
-            title: 'Market Access',
-            description:
-                'Reach new markets and expand your reach with over 30+ African countries. Give you access to new opportunities.',
+            title: 'Product Categories',
+            description: 'Browse 50+ sectors from agriculture and manufacturing to technology and services.',
         },
         {
             icon: <Globe className="w-6 h-6 text-orange-500" />,
-            title: 'Market Access',
-            description:
-                'Reach new markets and expand your reach with over 30+ African countries. Give you access to new opportunities.',
+            title: 'RFQ System',
+            description: 'Submit and respond to trade requests efficiently with our Request-for-Quotation feature.',
         },
         {
             icon: <Shield className="w-6 h-6 text-orange-500" />,
-            title: 'Market Access',
-            description:
-                'Reach new markets and expand your reach with over 30+ African countries. Give you access to new opportunities.',
+            title: 'Trade Analytics',
+            description: 'Access real-time dashboards tracking your activity, sales trends, and regional performance.',
         },
         {
             icon: <Zap className="w-6 h-6 text-orange-500" />,
-            title: 'Market Access',
-            description:
-                'Reach new markets and expand your reach with over 30+ African countries. Give you access to new opportunities.',
+            title: 'Dispute Resolution',
+            description: 'Neutral mediation and arbitration support for smooth, fair trade.',
         },
         {
             icon: <CheckCircle className="w-6 h-6 text-orange-500" />,
-            title: 'Market Access',
-            description:
-                'Reach new markets and expand your reach with over 30+ African countries. Give you access to new opportunities.',
+            title: 'Secure Messaging',
+            description: 'Communicate directly with verified partners via encrypted channels.',
         },
     ]
 
