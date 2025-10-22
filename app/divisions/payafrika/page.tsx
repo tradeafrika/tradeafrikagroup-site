@@ -271,21 +271,19 @@ const PayAfrikaPage: React.FC = () => {
 
             {/* Closing CTA Section */}
             <section className="py-16 px-4 bg-white">
-                <div className="max-w-4xl mx-auto bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-12 text-center text-white">
+                <div className="max-w-4xl mx-auto bg-[#067E48] rounded-2xl p-12 text-center text-white">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        Trade Afrika Group Building Africa’s Digital Trade Future
+                        Building Africa’s Digital Trade Future
                     </h2>
                     <p className="text-orange-100 mb-8 text-lg">
                         Together, our divisions form an interconnected ecosystem that simplifies trade, strengthens
                         MSMEs, and drives Africa’s digital economic transformation under the AfCFTA.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-white text-orange-600 font-semibold px-8 py-3 rounded-lg hover:bg-orange-50 transition-colors">
+                        <button className="bg-white text-green-700 font-semibold px-8 py-3 rounded-lg hover:bg-orange-50 transition-colors">
                             Explore More Divisions
                         </button>
-                        <button className="border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-orange-600 transition-colors">
-                            Join the Movement
-                        </button>
+                       
                     </div>
                 </div>
             </section>

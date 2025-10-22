@@ -350,7 +350,7 @@ const ContactPage: React.FC = () => {
                                 href="tel:+256414342042"
                                 className="text-teal-600 hover:text-teal-700 text-sm font-medium"
                             >
-                                +1 (555) 123-4567
+                                +256 764898856
                             </a>
                         </div>
                     </div>
@@ -371,7 +371,7 @@ const ContactPage: React.FC = () => {
                                 href="https://wa.me/256414342042"
                                 className="text-teal-600 hover:text-teal-700 text-sm font-medium"
                             >
-                                +1 (555) 987-6543
+                                +256 764898856
                             </a>
                         </div>
                     </div>
