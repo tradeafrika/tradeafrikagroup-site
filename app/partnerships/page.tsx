@@ -185,10 +185,10 @@ const PartnershipPage = () => {
                                 days.
                             </p>
                             <a
-                                href="mailto:info@tradeafriKa.org"
+                                href="mailto:info@tradeafrikagroup.org"
                                 className="text-green-600 hover:text-green-700 font-medium underline break-words"
                             >
-                                info@tradeafrika.org
+                                info@tradeafrikagroup.org
                             </a>
                         </div>
 
@@ -206,7 +206,7 @@ const PartnershipPage = () => {
                                 href="tel:+256312104367"
                                 className="text-green-600 hover:text-green-700 font-medium underline"
                             >
-                                +256 312 104 367
+                                +256 764898856
                             </a>
                         </div>
                     </div>

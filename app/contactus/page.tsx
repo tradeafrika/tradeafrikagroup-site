@@ -321,7 +321,7 @@ const ContactPage: React.FC = () => {
                                 href="mailto:info@indieafrica.org"
                                 className="text-teal-600 hover:text-teal-700 text-sm font-medium"
                             >
-                                info@tradeafrika.org
+                                info@tradeafrikagroup.org
                             </a>
                         </div>
 
