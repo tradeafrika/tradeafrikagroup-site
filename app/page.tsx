@@ -11,8 +11,8 @@ export default function HomePage() {
             <LandingFold />
             <OurDivisions />
             <FeaturedPrograms />
-            <TrustedOrganizations />
-            <OurImpact />
+            {/* <TrustedOrganizations /> */}
+            {/* <OurImpact /> */}
             <CTASection />
         </div>
     )

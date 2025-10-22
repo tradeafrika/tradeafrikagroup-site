@@ -69,7 +69,7 @@ const PayAfrikaPage: React.FC = () => {
 
     const benefits = [
         {
-            title: '⚡ Settle cross-border payments in minutes, not days',
+            title: 'Settle cross-border payments in minutes, not days',
             description:
                 'PayAfrika accelerates cross-border transactions, reducing delays and improving cash flow for African businesses.',
         },

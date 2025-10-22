@@ -1,12 +1,25 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import commonLogo from '@/assets/tradeafrikalogo.png'
+import whiteLogo from '@/assets/White.png'
+import blackLogo from '@/assets/black-logo.png'
 
-export default function ProductLogo() {
-    return (
-        <Link href="/" className=" flex items-center space-x-2">
-            <Image src={commonLogo} width="40" height="40" alt="product-logo" />
-            <span className=" font-medium text-sm text-black">Trade <br></br> Afrika</span>
-        </Link>
-    )
+
+interface IProductLogoProps {
+    color: 'white' | 'black'
+}
+
+export default function ProductLogo({ color }: IProductLogoProps) {
+    if (color == 'black') {
+        return (
+            <Link href="/" className=" flex items-center space-x-2">
+                <Image src={blackLogo} width="98" height="30" alt="product-logo" />
+            </Link>
+        )
+    } else {
+        return (
+            <Link href="/" className=" flex items-center space-x-2">
+                <Image src={whiteLogo} width="98" height="30" alt="product-logo" />
+            </Link>
+        )
+    }
 }

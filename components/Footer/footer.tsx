@@ -25,44 +25,32 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
     const [email, setEmail] = useState('')
 
     const columns: FooterColumn[] = [
-        {
-            title: 'About',
-            links: [
-                { label: 'About us', href: '#' },
-                { label: 'Our Story', href: '#' },
-                { label: 'Leadership', href: '#' },
-                { label: 'Careers', href: '#' },
-                { label: 'Press Kit', href: '#' },
-            ],
-        },
+      
         {
             title: 'Resources',
             links: [
-                { label: 'Programs & Events', href: '#' },
+                 { label: 'About us', href: '/aboutus' },
+                { label: 'Programs & Events', href: '/programs-events' },
                 { label: 'Market Day', href: '#' },
                 { label: 'Workshops', href: '#' },
-                { label: 'Sucess Stories', href: '#' },
-                { label: 'Blog', href: '#' },
+              
             ],
         },
         {
             title: 'Our Divisions',
             links: [
-                { label: 'Trade Afrika Exchange', href: '#' },
-                { label: 'trade Afrika Academy', href: '#' },
-                { label: 'AfriShip Logitics', href: '#' },
-                { label: 'PayAfrika', href: '#' },
-                { label: 'Data Insights', href: '#' },
+                { label: 'Trade Afrika Marketplace', href: '/divisions/marketplace' },
+                { label: 'trade Afrika Academy', href: '/divisions/academy' },
+                { label: 'AfriShip Logitics', href: '/divisions/afriship' },
+                { label: 'PayAfrika', href: '/divisions/payafrika' },
             ],
         },
     ]
 
     const socialLinks = [
-        { icon: <Facebook/>, label: 'Facebook', href: '#' },
-        { icon: <Instagram/>, label: 'Instagram', href: '#' },
-        { icon: '𝕏', label: 'X (Twitter)', href: '#' },
-        { icon: <Linkedin/>, label: 'LinkedIn', href: '#' },
-        { icon: <Youtube/>, label: 'YouTube', href: '#' },
+        { icon: <Instagram/>, label: 'Instagram', href: "https://www.instagram.com/tradeafrikamarketplace?igsh=MXVteGNyNXVqNGNkaA%3D%3d&utm_source=qr" },
+        { icon: '𝕏', label: 'X (Twitter)', href: 'https://x.com/trade_afrika' },
+        { icon: <Linkedin/>, label: 'LinkedIn', href: 'https://www.linkedin.com/company/afritrade-b2b-digital-marketplace/' },
     ]
 
     const handleSubscribe = (e: React.FormEvent) => {
@@ -81,7 +69,7 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
                     {/* Logo */}
                     <div className="lg:col-span-1">
                         <div className="flex items-center gap-2">
-                           <ProductLogo2/>
+                           <ProductLogo color='white'/>
                         </div>
                     </div>
 

@@ -46,14 +46,12 @@ const divisions: Division[] = [
 
 const OurDivisions: React.FC = () => {
     return (
-        <section className="py-16 px-4 bg-gray-50">
+        <section className="py-16 px-4 bg-white">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12 w-full flex flex-col items-center justify-center max-h-xl">
                     <div className='w-[55%] space-y-4'>
-                        <p className="text-sm font-semibold text-gray-600 ">
-                            Four operational arms advancing digital trade across the continent.
-                        </p>
+                       
                         <h2 className="text-4xl md:text-4xl font-semibold text-gray-900 ">Our Divisions</h2>
 
                         <span className="text-neutral-500 mt-6 w-[10px]">
