@@ -132,7 +132,7 @@ const AfriShipPage: React.FC = () => {
 
                     {/* Description */}
                     <p className="text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                        AfriShip simplifies the complexity of African cross-border logistics — ensuring reliable
+                        AfriShip simplifies the complexity of African cross-border logistics ensuring reliable
                         delivery, transparent pricing, and expert customs handling.
                         <br />
                         We partner with trusted logistics providers to keep African goods moving efficiently and
@@ -141,10 +141,10 @@ const AfriShipPage: React.FC = () => {
 
                     {/* CTA Button */}
                     <Link
-                        href="/afriship/partnership"
+                        href="tradeafrikamarketplace.net"
                         className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded-lg text-sm sm:text-base md:text-lg transition-colors"
                     >
-                        Partner with AfriShip
+                        Explore
                     </Link>
                 </div>
             </section>
