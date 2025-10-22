@@ -148,6 +148,7 @@ const FooterComponent: React.FC<FooterProps> = ({ onSubscribe }) => {
                             <Link
                                 key={idx}
                                 href={social.href}
+                                target='_blank'
                                 aria-label={social.label}
                                 className="w-10 h-10 flex items-center justify-center text-white hover:text-emerald-600 transition-colors duration-200"
                             >

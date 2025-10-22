@@ -7,7 +7,7 @@ const DivisionsHero: React.FC = () => {
         <section 
        
         
-        className="bg-[#e6f2ed] flex items-center justify-center py-20 sm:py-28 md:py-32 lg:py-40 px-4 sm:px-8 lg:px-16 xl:px-24 2xl:px-40">
+        className="bg-[#e6f2ed] flex items-center justify-center py-16 sm:py-24 md:py-28 lg:py-32 xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 2xl:px-40">
             <div className="w-full max-w-[1600px] text-center">
                 {/* Tagline */}
                 <p className="text-emerald-600 font-semibold uppercase tracking-wide mb-3 sm:mb-4 text-xs sm:text-sm md:text-base">

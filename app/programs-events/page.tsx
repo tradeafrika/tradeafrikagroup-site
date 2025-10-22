@@ -1,11 +1,11 @@
-"use client"
-
+'use client'
 
 import React, { useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Calendar, MapPin, Clock, ChevronLeft, ChevronRight } from 'lucide-react'
 import ProgramsEventsHero from '@/components/pages/programs&events/heroSection'
+import CalendarSection from '@/components/sp/sio'
 
 // Types
 interface Program {
@@ -48,21 +48,21 @@ const programs: Program[] = [
         id: 1,
         title: 'TradeAfrika Market Days',
         description: 'Gain opportunities to verified buyers and suppliers worldwide.',
-        image: '/images/market-access.jpg',
+        image: '/imgs/Marketplace.jpg',
         link: '#',
     },
     {
         id: 2,
         title: 'Digital Trade Workshops',
         description: 'Hands-on sessions to get MSME trade ready.',
-        image: '/images/workshops.jpg',
+        image: '/imgs/workshop.jpg',
         link: '#',
     },
     {
         id: 3,
         title: 'SME Spotlights',
         description: 'Stories of MSMEs growth and cross-border success.',
-        image: '/images/spotlights.jpg',
+        image: '/imgs/WomenandYouthinTrade.jpg',
         link: '#',
     },
 ]
@@ -139,9 +139,8 @@ const galleryImages: GalleryImage[] = [
 // Components
 const ProgramCard: React.FC<Program> = ({ title, description, image, link }) => (
     <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
-        <div className="relative h-48 bg-gradient-to-br from-orange-400 to-orange-600">
-            {/* Placeholder for image */}
-            <div className="absolute inset-0 flex items-center justify-center text-white text-4xl">🌍</div>
+        <div className="relative h-48 sm:h-56 md:h-64 w-full bg-gray-100">
+            <Image src={image} alt={title} fill className="object-cover" />
         </div>
         <div className="p-6">
             <span className="text-xl font-normal text-gray-900 mb-2">{title}</span>
@@ -223,7 +222,7 @@ const ProgramsEventsPage: React.FC = () => {
 
             <div className="min-h-screen bg-[#e6f2ed]">
                 {/* Hero Section */}
-              <ProgramsEventsHero/>
+                <ProgramsEventsHero />
 
                 {/* Our Programs */}
                 <section className="py-20 px-4 bg-white">
@@ -265,15 +264,16 @@ const ProgramsEventsPage: React.FC = () => {
                                     </button>
                                 ))}
                             </div>
+                            <CalendarSection/>
                         </div>
 
                         {/* Calendar Embed Placeholder */}
-                        <div className="bg-white rounded-lg p-16 text-center mb-12 h-[500px] shadow-sm">
+                        {/* <div className="bg-white rounded-lg p-16 text-center mb-12 h-[500px] shadow-sm">
                             <Calendar size={64} className="mx-auto text-gray-400 mb-4" />
                             <h3 className="text-xl font-semibold text-gray-900 mb-2">
                                 External calendar embed placeholder.
                             </h3>
-                        </div>
+                        </div> */}
 
                         {/* Next Scheduled Events */}
                         <div className="mb-8 mt-12 flex items-center flex-col justify-center">
@@ -288,72 +288,10 @@ const ProgramsEventsPage: React.FC = () => {
                 </section>
 
                 {/* Customer Testimonials */}
-                <section className="py-20 px-4">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Customer testimonials</h2>
-                            <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        </div>
-                        <div className="relative max-w-4xl mx-auto">
-                            <TestimonialCard {...testimonials[testimonialIndex]} />
-                            <div className="flex justify-center gap-2 mt-6">
-                                {testimonials.map((_, idx) => (
-                                    <button
-                                        key={idx}
-                                        onClick={() => setTestimonialIndex(idx)}
-                                        className={`w-2 h-2 rounded-full transition-colors ${
-                                            idx === testimonialIndex ? 'bg-emerald-600' : 'bg-gray-300'
-                                        }`}
-                                    />
-                                ))}
-                            </div>
-                            <div className="absolute top-1/2 -translate-y-1/2 -left-4 md:-left-12 right-auto">
-                                <button
-                                    onClick={prevTestimonial}
-                                    className="bg-transparent text-black hover:bg-gray-50 p-2 rounded-full shadow-sm border border-gray-200"
-                                >
-                                    <ChevronLeft size={24}  />
-                                </button>
-                            </div>
-                            <div className="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-12">
-                                <button
-                                    onClick={nextTestimonial}
-                                    className="bg-transparent text-black hover:bg-gray-50 p-2 rounded-full shadow-sm border border-gray-200"
-                                >
-                                    <ChevronRight size={24} />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <CalendarSection/>
 
                 {/* Event Gallery */}
-                <section className="bg-white py-20 px-4">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Event Gallery</h2>
-                            <p className="text-gray-600">Moments from our programs across Africa</p>
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-                            {galleryImages.slice(0, 4).map((image) => (
-                                <div
-                                    key={image.id}
-                                    className="aspect-square bg-gray-200 rounded-lg flex items-center justify-center"
-                                >
-                                    {/* <div className="text-gray-400 text-6xl">🖼️</div> */}
-                                </div>
-                            ))}
-                        </div>
-                        <div className="flex justify-center gap-2">
-                            {[0, 1, 2, 3].map((idx) => (
-                                <button
-                                    key={idx}
-                                    className={`w-2 h-2 rounded-full ${idx === 0 ? 'bg-emerald-600' : 'bg-gray-300'}`}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                </section>
+             
 
                 {/* CTA Section */}
                 <section className="py-20 px-4">

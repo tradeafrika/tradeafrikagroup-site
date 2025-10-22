@@ -47,7 +47,7 @@ const PartnershipPage = () => {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section */}
-            <section className="bg-[#e6f2ed] flex items-center justify-center py-20 sm:py-28 md:py-32 lg:py-40 px-4 sm:px-8 lg:px-16 xl:px-24 2xl:px-40">
+            <section className="bg-[#e6f2ed] flex items-center justify-center py-16 sm:py-24 md:py-28 lg:py-32 xl:py-40 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 2xl:px-40">
                 <div className="w-full max-w-[1600px] text-center">
                     {/* Tagline */}
                     <p className="text-green-700 font-semibold uppercase tracking-wide mb-3 sm:mb-4 text-xs sm:text-sm md:text-base">
@@ -55,10 +55,10 @@ const PartnershipPage = () => {
                     </p>
 
                     {/* Heading */}
-                    <h1 className="text-green-700 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl mb-4 sm:mb-6 leading-tight px-2 sm:px-0">
+                    <h1 className="text-green-700 font-bold text-2xl sm:text-2xl md:text-3xl lg:text-6xl 2xl:text-7xl mb-4 sm:mb-6 leading-tight px-2 sm:px-0">
                         Partnerships That Power
                         <br className="hidden sm:block" />
-                        <span className="block sm:inline"> Africa’s Digital Trade Future</span>
+                        <span className="block sm:inline">Africa’s Digital Trade Future</span>
                     </h1>
 
                     {/* Description */}
@@ -74,9 +74,11 @@ const PartnershipPage = () => {
                         <button className="bg-green-700 hover:bg-green-600 text-white px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base lg:text-lg transition-colors w-full sm:w-auto">
                             Become a Partner
                         </button>
-                        {/* <button className="bg-white hover:bg-gray-50 text-gray-800 px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base lg:text-lg border border-gray-300 transition-colors w-full sm:w-auto">
-                            Get Involved
-                        </button> */}
+                        {/*
+      <button className="bg-white hover:bg-gray-50 text-gray-800 px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded font-semibold text-sm sm:text-base lg:text-lg border border-gray-300 transition-colors w-full sm:w-auto">
+        Get Involved
+      </button>
+      */}
                     </div>
                 </div>
             </section>
