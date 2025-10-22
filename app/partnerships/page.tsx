@@ -27,7 +27,7 @@ const PartnershipPage = () => {
         {
             title: 'Market Access & Events',
             description:
-                'We curate partnerships like the Trade Africa Market Day and Digital Trade Workshops to connect MSMEs with regional buyers and exporters.',
+                'We curate partnerships like the Trade Afrika Market Day and Digital Trade Workshops to connect MSMEs with regional buyers and exporters.',
         },
         {
             title: 'Strategic Partners',

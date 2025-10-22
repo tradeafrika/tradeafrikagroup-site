@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { ChevronDown, CheckCircle, TrendingUp, Shield, Globe, Zap, Truck, Clock, Check } from 'lucide-react'
 import Link from 'next/link'
-import afriship from '@/public/imgs/afriship.jpg'
+import afriship from '@/public/logitics.jpg'
 
 const AfriShipPage: React.FC = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null)
