@@ -70,44 +70,26 @@ const programs: Program[] = [
 const events: Event[] = [
     {
         id: 1,
-        date: '12',
+        date: '1',
         month: 'NOV',
-        title: 'Advanced E-Commerce Logistics',
-        location: 'Accra',
-        time: '10:00 AM - 1:00 PM',
+        title: 'TradeAfrika MarketDay',
+        location: 'National Innovation HUB',
+        time: '8:00 AM - 1:00 PM',
         category: 'Webinar',
         spotsLeft: 12,
     },
-    {
+     {
         id: 2,
-        date: '12',
+        date: '14',
         month: 'NOV',
-        title: 'Advanced E-Commerce Logistics',
-        location: 'Accra',
-        time: '10:00 AM - 1:00 PM',
+        title: 'Digital Trade Workshop | Empowering SMEs for Digital Trade Through the AfCFTA',
+        location: 'National Innovation HUB - Auditorium',
+        time: '8:00 AM - 4:00 PM',
         category: 'Webinar',
         spotsLeft: 12,
     },
-    {
-        id: 3,
-        date: '12',
-        month: 'NOV',
-        title: 'Advanced E-Commerce Logistics',
-        location: 'Accra',
-        time: '10:00 AM - 1:00 PM',
-        category: 'Webinar',
-        spotsLeft: 12,
-    },
-    {
-        id: 4,
-        date: '12',
-        month: 'NOV',
-        title: 'Advanced E-Commerce Logistics',
-        location: 'Accra',
-        time: '10:00 AM - 1:00 PM',
-        category: 'Webinar',
-        spotsLeft: 12,
-    },
+  
+  
 ]
 
 const testimonials: Testimonial[] = [
@@ -174,12 +156,10 @@ const EventCard: React.FC<Event> = ({ date, month, title, location, time, catego
                         {time}
                     </span>
                 </div>
-                <p className="text-sm text-gray-500 mt-1">{spotsLeft} spots left. Register early.</p>
+                {/* <p className="text-sm text-gray-500 mt-1">{spotsLeft} spots left. Register early.</p> */}
             </div>
         </div>
-        <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-medium transition-colors">
-            Register
-        </button>
+    
     </div>
 )
 
@@ -244,7 +224,7 @@ const ProgramsEventsPage: React.FC = () => {
                 {/* Upcoming Events */}
                 <section className="bg-gradient-to-br from-emerald-50 to-teal-50 py-20 px-4">
                     <div className="max-w-7xl mx-auto">
-                        <div className="text-center mb-8">
+                        {/* <div className="text-center mb-8">
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Upcoming Events</h2>
                             <p className="text-gray-600 max-w-2xl mx-auto mb-6">
                                 See upcoming Market days, workshops, and trade-ins across each locale.
@@ -264,8 +244,8 @@ const ProgramsEventsPage: React.FC = () => {
                                     </button>
                                 ))}
                             </div>
-                            <CalendarSection/>
-                        </div>
+                           
+                        </div> */}
 
                         {/* Calendar Embed Placeholder */}
                         {/* <div className="bg-white rounded-lg p-16 text-center mb-12 h-[500px] shadow-sm">
@@ -288,7 +268,7 @@ const ProgramsEventsPage: React.FC = () => {
                 </section>
 
                 {/* Customer Testimonials */}
-                <CalendarSection/>
+                {/* <CalendarSection/> */}
 
                 {/* Event Gallery */}
              

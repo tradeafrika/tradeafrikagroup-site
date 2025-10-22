@@ -7,7 +7,7 @@ const CTASection: React.FC = () => {
                 <div className="bg-[#067E48] rounded-3xl space-y-8 px-8 py-16 md:py-24 text-center ">
                     {/* Heading */}
                     <div className='space-y-6'>
-                        <span className="text-2xl md:text-4xl lg:text-6xl  text-white text-[56px] leading-[1.2] font-bold ">
+                        <span className="text-xl md:text-3xl lg:text-5xl mb-6  text-white text-[56px] leading-[1.2] font-bold ">
                             Join Trade Afrika Group
                             <br />
                             Today

@@ -37,7 +37,7 @@ const LandingFold: React.FC = () => {
 
                     {/* Description */}
                     <p className="text-[15px] leading-[1.5] font-light text-gray-200 max-w-2xl mx-auto lg:mx-0">
-                        We drive <span className="font-semibold text-white">Africa&apos;s digital trade transformation</span> by combining technology, partnerships, and capacity building — connecting businesses and equipping <span className="font-semibold text-white">MSMEs</span> with digital trade skills, logistics, and fintech partnerships for seamless, secure, and inclusive trade under the <span className="font-semibold text-white">AfCFTA</span>.
+                        We drive <span className="font-semibold text-white">Africa&apos;s digital trade transformation</span> by combining technology, partnerships, and capacity building connecting businesses and equipping <span className="font-semibold text-white">MSMEs</span> with digital trade skills, logistics, and fintech partnerships for seamless, secure, and inclusive trade under the <span className="font-semibold text-white">AfCFTA</span>.
                     </p>
 
                     {/* CTA */}
