@@ -309,15 +309,8 @@ const HeaderComponent: React.FC = () => {
                         >
                             Partnerships
                         </Link>
+                        
 
-                        {/* Only Contact Us CTA visible on mobile */}
-                        <Link
-                            href="/contactus"
-                            className="block mx-3 mt-5 text-center bg-green-700 text-white px-6 py-3 rounded-md text-base font-medium hover:bg-green-800 transition-colors"
-                            onClick={closeMobileMenu}
-                        >
-                            Contact Us
-                        </Link>
                     </div>
                 </div>
             )}
