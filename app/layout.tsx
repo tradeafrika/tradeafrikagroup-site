@@ -20,6 +20,7 @@ const InterFont = Inter({
 
 export const metadata: Metadata = {
     title: 'TradeAfrika',
+    
 }
 
 export default function RootLayout({

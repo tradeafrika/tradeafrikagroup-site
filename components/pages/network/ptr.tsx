@@ -21,13 +21,13 @@ const partnershipModels = [
     {
         title: 'Skills Development',
         description:
-            'Through the Trade Africa Academy, we train and upskill traders in digital entrepreneurship and e-export readiness.',
+            'Through the Trade Afrika Academy, we train and upskill traders in digital entrepreneurship and e-export readiness.',
         link: '/divisions/academy',
     },
     {
         title: 'Market Access & Events',
         description:
-            'We curate partnerships like the Trade Africa Market Day and Digital Trade Workshops to connect MSMEs with regional buyers and exporters.',
+            'We curate partnerships like the Trade Afrika Market Day and Digital Trade Workshops to connect MSMEs with regional buyers and exporters.',
         link: '/programs-events',
     },
     {

@@ -22,7 +22,7 @@ export default function WhyJK() {
                     <div>
                         <p className="text-gray-700 text-base sm:text-lg md:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
                             We're not just building a platform; we're building Africa's digital trade economy. By
-                            partnering with Trade Africa, you're joining a Pan-African movement that empowers MSMEs,
+                            partnering with Trade Afrika, you're joining a Pan-African movement that empowers MSMEs,
                             connects markets, and strengthens value chains across borders.
                         </p>
                     </div>

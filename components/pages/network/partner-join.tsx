@@ -16,7 +16,7 @@ export default function JoinNetworkHero() {
 
                 {/* Description */}
                 <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl font-light max-w-xl sm:max-w-2xl md:max-w-3xl 2xl:max-w-4xl mx-auto leading-relaxed mb-8 sm:mb-10 px-2 sm:px-0">
-                    At Trade Africa, we believe African success depends on building partnerships that accelerate
+                    At Trade Afrika, we believe African success depends on building partnerships that accelerate
                     collaboration. We partner with governments, private sector traders, innovators, and development
                     organizations to build a connected digital trade ecosystem advancing the goals of the AfCFTA and
                     Agenda 2063.

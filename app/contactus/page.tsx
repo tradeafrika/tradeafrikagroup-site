@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
         },
         {
             question: 'Is there a minimum retail value?',
-            answer: 'There is no minimum order value for transactions. Our Trade Africa Exchange Exchange was implemented for buyers and sellers to transact regardless of price. We encourage both high-value B2B transactions and smaller B2C orders.',
+            answer: 'There is no minimum order value for transactions. Our Trade Afrika Exchange Exchange was implemented for buyers and sellers to transact regardless of price. We encourage both high-value B2B transactions and smaller B2C orders.',
             isOpen: false,
         },
     ])

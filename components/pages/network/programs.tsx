@@ -13,7 +13,7 @@ interface Program {
 const programs: Program[] = [
     {
         id: '1',
-        title: 'Trade Africa Market Days',
+        title: 'Trade Afrika Market Days',
         description: 'Monthly marketplace events connecting African producers and suppliers to  buyers, corporates and digital platforms.',
         imageUrl: '/market-day.jpg', // Replace with your actual image path
         link: '',

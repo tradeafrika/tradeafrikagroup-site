@@ -22,7 +22,7 @@ const PartnershipPage = () => {
         {
             title: 'Skills Development',
             description:
-                'Through the Trade Africa Academy, we train and upskill traders in digital entrepreneurship and e-export readiness.',
+                'Through the Trade Afrika Academy, we train and upskill traders in digital entrepreneurship and e-export readiness.',
         },
         {
             title: 'Market Access & Events',
@@ -63,7 +63,7 @@ const PartnershipPage = () => {
 
                     {/* Description */}
                     <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl font-light max-w-xl sm:max-w-2xl md:max-w-3xl 2xl:max-w-4xl mx-auto leading-relaxed mb-8 sm:mb-10 px-2 sm:px-0">
-                        At Trade Africa, we believe African success depends on building partnerships that accelerate
+                        At Trade Afrika, we believe African success depends on building partnerships that accelerate
                         collaboration. We partner with governments, private sector traders, innovators, and development
                         organizations to build a connected digital trade ecosystem advancing the goals of the AfCFTA and
                         Agenda 2063.
@@ -140,7 +140,7 @@ const PartnershipPage = () => {
                         <div>
                             <p className="text-gray-700 text-base sm:text-lg md:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
                                 We're not just building a platform; we're building Africa's digital trade economy. By
-                                partnering with Trade Africa, you're joining a Pan-African movement that empowers MSMEs,
+                                partnering with Trade Afrika, you're joining a Pan-African movement that empowers MSMEs,
                                 connects markets, and strengthens value chains across borders.
                             </p>
                         </div>
