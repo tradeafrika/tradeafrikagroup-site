@@ -9,18 +9,35 @@ import FooterComponent from '@/components/Footer/footer'
  */
 const InterFont = Inter({
     subsets: ['latin'],
-    variable : "--next-interfont"
+    variable: '--next-interfont',
 })
 
 /**
  * The Body's Font
  */
 
-
-
 export const metadata: Metadata = {
     title: 'TradeAfrika',
-    
+    keywords: [
+        'tradeafrika',
+        'market day',
+        'tradeafrikamarketplace',
+        'Joshua Ahimbisibwe',
+        'african trade',
+        'AfCFTA',
+        'marketplace',
+        'b2b',
+        'B2B',
+        'women SMEs',
+        'youth SMEs',
+        'Intra-African trade',
+        'innovation hub',
+        'digital trade',
+        'green trade',
+        'National Innovation Hub',
+        'Wandera Martin',
+        'Conrad'
+    ],
 }
 
 export default function RootLayout({
