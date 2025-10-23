@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
                     backgroundImage: `url(${aboutImage.src})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    filter: 'brightness(45%)',
+                    filter: 'brightness(35%)',
                 }}
                 className="absolute -z-10  left-0 w-full bottom-0 h-full"
             ></div>
