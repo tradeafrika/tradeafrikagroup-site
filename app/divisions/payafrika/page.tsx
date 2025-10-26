@@ -132,7 +132,8 @@ const PayAfrikaPage: React.FC = () => {
                     </p>
 
                     <Link
-                        href="tradeafrikamarketplace.net"
+                      target='_blank'
+                        href="https://tradeafrikamarketplace.net"
                         className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded-lg text-sm sm:text-base md:text-lg transition-colors"
                     >
                         Explore
